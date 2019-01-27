@@ -1,3 +1,25 @@
 <resources>
+
     <string name="app_name">HD Wallpapers</string>
+
+    <string-array name="list_of_uri">
+        <item>asset:///Let_a.png</item>
+        <item>asset:///Let_b.png</item>
+        <item>asset:///Let_c.png</item>
+        <item>asset:///Let_d.png</item>
+        <item>asset:///Let_e.png</item>
+        <item>asset:///Let_f.png</item>
+        <item>asset:///Let_g.png</item>
+    </string-array>
+
+    <string-array name="list_of_categories">
+        <item>Trending</item>
+        <item>Abstract</item>
+        <item>Nature</item>
+        <item>Music</item>
+        <item>Vehicles</item>
+        <item>Animals</item>
+        <item>Technology</item>
+    </string-array>
+
 </resources>
