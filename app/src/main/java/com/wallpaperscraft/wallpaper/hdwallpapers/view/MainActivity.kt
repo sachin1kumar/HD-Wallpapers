@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var viewModel: ViewModel
     private lateinit var catRecyclerView: RecyclerView
-    private var listOfDashData: Pair<List<String>,List<String>>? = null
+    private var listOfDashData: HashMap<String,List<String> >? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             this, android.arch.lifecycle.Observer {
                 listOfDashData = it!!
                 var catAdapter = ListOfCatAdapter(listOfDashData!!)
-                var mLayoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
+                var mLayoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this) as RecyclerView.LayoutManager
                 catRecyclerView.layoutManager = mLayoutManager
                 catRecyclerView.itemAnimator
                 catRecyclerView.isNestedScrollingEnabled = false

@@ -1,29 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:fresco="http://schemas.android.com/apk/res-auto"
         android:id="@+id/relativelayout"
         android:layout_width="match_parent"
+        android:paddingBottom="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:layout_height="wrap_content">
 
-    <com.facebook.drawee.view.SimpleDraweeView
-            android:id="@+id/myImageView"
+    <RelativeLayout
+            android:id="@+id/header"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            fresco:fadeDuration="300"
-            android:src="@mipmap/alex_unsplash" />
-
-    <TextView
-            android:id="@+id/myImageViewText"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/myImageView"
-            android:layout_alignTop="@id/myImageView"
-            android:layout_alignRight="@id/myImageView"
-            android:layout_alignBottom="@id/myImageView"
-            android:layout_margin="1dp"
-            android:gravity="bottom|center_horizontal"
-            android:text="Hello"
-            android:textColor="#000000" />
+            android:paddingBottom="5dp"
+            android:orientation="horizontal" fresco:layout_constraintTop_toTopOf="parent"
+            fresco:layout_constraintEnd_toEndOf="parent" fresco:layout_constraintStart_toStartOf="parent"
+            fresco:layout_constraintBottom_toTopOf="@+id/tableLayout">
 
-</RelativeLayout>
+        <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:layout_alignParentLeft="true"
+        />
+
+        <TextView
+                android:layout_toRightOf="@+id/myImageViewText"
+                android:id="@+id/seeall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="see all"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+        />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tableLayout"
+            fresco:layout_constraintEnd_toEndOf="parent" fresco:layout_constraintTop_toBottomOf="@+id/header"
+            fresco:layout_constraintStart_toStartOf="parent"
+            android:measureAllChildren="false"
+            android:scrollbars="none">
+        <LinearLayout
+                android:id="@+id/innerLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_first"
+                    android:layout_width="80dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    android:layout_height="120dp"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_second"
+                    android:layout_width="80dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    android:layout_height="120dp"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginRight="2dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_third"
+                    android:layout_width="80dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    android:layout_height="120dp"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginRight="2dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_fourth"
+                    android:layout_width="80dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    android:layout_height="120dp"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginRight="2dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_fifth"
+                    android:layout_width="80dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    android:layout_height="120dp"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_sixth"
+                    android:layout_width="80dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    android:layout_height="120dp"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginRight="2dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_seventh"
+                    android:layout_width="80dp"
+                    android:layout_height="120dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginRight="2dp"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_eigth"
+                    android:layout_width="80dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    android:layout_height="120dp"
+                    fresco:fadeDuration="300"
+                    android:src="@mipmap/alex_unsplash"
+                    android:layout_marginRight="2dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

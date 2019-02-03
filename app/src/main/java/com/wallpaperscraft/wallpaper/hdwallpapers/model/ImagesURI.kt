@@ -1,30 +1,66 @@
 package com.wallpaperscraft.wallpaper.images.model
 
-import android.net.Uri
 import com.wallpaperscraft.wallpaper.hdwallpapers.MyApplication
 import com.wallpaperscraft.wallpaper.hdwallpapers.R
-import com.facebook.drawee.backends.pipeline.Fresco
-import com.facebook.drawee.backends.pipeline.PipelineDraweeController
-import com.facebook.imagepipeline.common.ResizeOptions
-import com.facebook.imagepipeline.request.ImageRequestBuilder
-import com.facebook.imagepipeline.request.ImageRequest
-
 
 
 class ImagesURI {
 
     companion object {
 
-        private val listOfUris = MyApplication.instance.applicationContext.resources.getStringArray(
-            R.array.list_of_uri).toList()
+        private val listOftrending = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.trending_list
+        ).toList()
+
+        private val listOfAbstract = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.abstract_list
+        ).toList()
+
+        private val listOfNature = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.nature_list
+        ).toList()
+
+        private val listOfMusic = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.music_list
+        ).toList()
+
+        private val listOfVehicle = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.vehicle_list
+        ).toList()
+
+        private val listOftech = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.technology_list
+        ).toList()
+
+        private val listOfAnimal = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.animal_list
+        ).toList()
 
         private val listOfCats = MyApplication.instance.applicationContext.resources.getStringArray(
-            R.array.list_of_categories).toList()
+            R.array.list_of_categories
+        ).toList()
 
 
-        fun getDashboardData(): Pair<List<String>,List<String>> {
-            return Pair(listOfUris, listOfCats)
+        private lateinit var hashMap: HashMap<String, List<String>>
+
+
+        fun getDashboardData(): HashMap<String, List<String>> {
+            return createHashMap()
         }
+
+
+        fun createHashMap(): HashMap<String, List<String>> {
+            hashMap = HashMap()
+            hashMap.put("trending", listOftrending)
+            hashMap.put("abstract", listOfAbstract)
+            hashMap.put("nature", listOfNature)
+            hashMap.put("music", listOfMusic)
+            hashMap.put("vehicle", listOfVehicle)
+            hashMap.put("tech", listOftech)
+            hashMap.put("animal", listOfAnimal)
+            return hashMap
+        }
+
 
     }
 

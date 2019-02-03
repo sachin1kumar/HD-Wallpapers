@@ -16,11 +16,12 @@ import com.facebook.imagepipeline.request.ImageRequest
 
 
 
-class ListOfCatAdapter(listOfDashData: Pair<List<String>,List<String>>)
+class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >)
     : RecyclerView.Adapter<ListOfCatAdapter.ViewHolder>() {
 
-    private var listOfCategoriesUri: List<String> = listOfDashData.first
-    private var listOfCategoriesNames: List<String> = listOfDashData.second
+    private var listOfdata = listOfDashData
+    private lateinit var listOfimages: List<String>
+    private lateinit var category: String
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): ViewHolder {
         val inflater = LayoutInflater.from(viewGroup.context)
@@ -28,17 +29,44 @@ class ListOfCatAdapter(listOfDashData: Pair<List<String>,List<String>>)
     }
 
     override fun getItemCount():Int {
-       return listOfCategoriesUri.size
+       return listOfdata.size
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        resizeDashImages(Uri.parse(listOfCategoriesUri.get(position)),viewHolder.image)
-        viewHolder.image.setImageURI(Uri.parse(listOfCategoriesUri.get(position)))
-        viewHolder.category.text = listOfCategoriesNames.get(position)
+        //resizeDashImages(Uri.parse(listOfCategoriesUri.get(position)),viewHolder.image)
+
+        when (position) {
+            0 -> category = "trending"
+            1 -> category = "abstract"
+            2 -> category = "nature"
+            3 -> category = "music"
+            4 -> category = "vehicle"
+            5 -> category = "tech"
+            6 -> category = "animal"
+        }
+
+        listOfimages = listOfdata[category]!!
+        viewHolder.image1.setImageURI(Uri.parse(listOfimages[0]))
+        viewHolder.image2.setImageURI(Uri.parse(listOfimages[1]))
+        viewHolder.image3.setImageURI(Uri.parse(listOfimages[2]))
+        viewHolder.image4.setImageURI(Uri.parse(listOfimages[3]))
+        viewHolder.image5.setImageURI(Uri.parse(listOfimages[4]))
+        viewHolder.image6.setImageURI(Uri.parse(listOfimages[5]))
+        viewHolder.image7.setImageURI(Uri.parse(listOfimages[6]))
+        viewHolder.image8.setImageURI(Uri.parse(listOfimages[7]))
+
+        viewHolder.category.text = category
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var image: SimpleDraweeView = itemView.findViewById(R.id.myImageView)
+        var image1: SimpleDraweeView = itemView.findViewById(R.id.image_first)
+        var image2: SimpleDraweeView = itemView.findViewById(R.id.image_second)
+        var image3: SimpleDraweeView = itemView.findViewById(R.id.image_third)
+        var image4: SimpleDraweeView = itemView.findViewById(R.id.image_fourth)
+        var image5: SimpleDraweeView = itemView.findViewById(R.id.image_fifth)
+        var image6: SimpleDraweeView = itemView.findViewById(R.id.image_sixth)
+        var image7: SimpleDraweeView = itemView.findViewById(R.id.image_seventh)
+        var image8: SimpleDraweeView = itemView.findViewById(R.id.image_eigth)
         var category: TextView = itemView.findViewById(R.id.myImageViewText)
     }
 
