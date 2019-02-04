@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.Toolbar
 import com.wallpaperscraft.wallpaper.hdwallpapers.R
 import com.wallpaperscraft.wallpaper.images.viewmodel.ImageViewModel
 
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: ViewModel
     private lateinit var catRecyclerView: RecyclerView
     private var listOfDashData: HashMap<String,List<String> >? = null
+    private lateinit var toolbar: Toolbar
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this).get(ImageViewModel::class.java)
 
         catRecyclerView = findViewById(R.id.list)
+        toolbar = findViewById(R.id.tool_bar)
+
+        setSupportActionBar(toolbar)
+        getSupportActionBar()!!.setDisplayShowTitleEnabled(false)
+
 
         (viewModel as ImageViewModel).getDashboardData().observe(
             this, android.arch.lifecycle.Observer {
