@@ -33,7 +33,7 @@
                 android:id="@+id/seeall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="see all"
+                android:text="@string/text_see_all"
                 android:layout_alignParentRight="true"
                 fresco:fontFamily="@font/ubuntu_light"
                 android:textColor="#000000"

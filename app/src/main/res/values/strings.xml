@@ -89,4 +89,14 @@
         <item>Technology</item>
     </string-array>
 
+    <string name="text_see_all">See all</string>
+
+    <string name="text_cat_first">Trending</string>
+    <string name="text_cat_second">Nature</string>
+    <string name="text_cat_third">Abstract</string>
+    <string name="text_cat_fourth">Music</string>
+    <string name="text_cat_fifth">Vehicle</string>
+    <string name="text_cat_sixth">Technology</string>
+    <string name="text_cat_seventh">Motivation</string>
+
 </resources>

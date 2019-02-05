@@ -13,7 +13,7 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder
 import com.wallpaperscraft.wallpaper.hdwallpapers.R
 import com.wallpaperscraft.wallpaper.images.model.ImagesURI
 import com.facebook.imagepipeline.request.ImageRequest
-
+import com.wallpaperscraft.wallpaper.hdwallpapers.MyApplication
 
 
 class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >)
@@ -36,13 +36,13 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >)
         //resizeDashImages(Uri.parse(listOfCategoriesUri.get(position)),viewHolder.image)
 
         when (position) {
-            0 -> category = "trending"
-            1 -> category = "abstract"
-            2 -> category = "nature"
-            3 -> category = "music"
-            4 -> category = "vehicle"
-            5 -> category = "tech"
-            6 -> category = "animal"
+            0 -> category = MyApplication.instance.getString(R.string.text_cat_first)
+            1 -> category = MyApplication.instance.getString(R.string.text_cat_second)
+            2 -> category = MyApplication.instance.getString(R.string.text_cat_third)
+            3 -> category = MyApplication.instance.getString(R.string.text_cat_fourth)
+            4 -> category = MyApplication.instance.getString(R.string.text_cat_fifth)
+            5 -> category = MyApplication.instance.getString(R.string.text_cat_sixth)
+            6 -> category = MyApplication.instance.getString(R.string.text_cat_seventh)
         }
 
         listOfimages = listOfdata[category]!!

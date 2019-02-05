@@ -51,13 +51,13 @@ class ImagesURI {
 
         fun createHashMap(): HashMap<String, List<String>> {
             hashMap = HashMap()
-            hashMap.put("trending", listOftrending)
-            hashMap.put("abstract", listOfAbstract)
-            hashMap.put("nature", listOfNature)
-            hashMap.put("music", listOfMusic)
-            hashMap.put("vehicle", listOfVehicle)
-            hashMap.put("tech", listOftech)
-            hashMap.put("animal", listOfAnimal)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_first), listOftrending)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_second), listOfAbstract)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_third), listOfNature)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_fourth), listOfMusic)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_fifth), listOfVehicle)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_sixth), listOftech)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_seventh), listOfAnimal)
             return hashMap
         }
 
