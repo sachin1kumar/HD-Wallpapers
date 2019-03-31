@@ -64,12 +64,14 @@
                     android:layout_height="120dp"
                     fresco:fadeDuration="300"
                     android:src="@mipmap/alex_unsplash"
+                    android:transitionName="1"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"/>
             <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/image_second"
                     android:layout_width="80dp"
                     fresco:actualImageScaleType="centerCrop"
+                    android:transitionName="2"
                     android:layout_height="120dp"
                     fresco:fadeDuration="300"
                     android:src="@mipmap/alex_unsplash"
@@ -81,6 +83,7 @@
                     android:layout_height="120dp"
                     fresco:fadeDuration="300"
                     android:src="@mipmap/alex_unsplash"
+                    android:transitionName="3"
                     android:layout_marginRight="2dp"/>
             <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/image_fourth"
@@ -88,6 +91,7 @@
                     fresco:actualImageScaleType="centerCrop"
                     android:layout_height="120dp"
                     fresco:fadeDuration="300"
+                    android:transitionName="4"
                     android:src="@mipmap/alex_unsplash"
                     android:layout_marginRight="2dp"/>
             <com.facebook.drawee.view.SimpleDraweeView
@@ -97,6 +101,7 @@
                     android:layout_height="120dp"
                     fresco:fadeDuration="300"
                     android:src="@mipmap/alex_unsplash"
+                    android:transitionName="5"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"/>
             <com.facebook.drawee.view.SimpleDraweeView
@@ -106,6 +111,7 @@
                     android:layout_height="120dp"
                     fresco:fadeDuration="300"
                     android:src="@mipmap/alex_unsplash"
+                    android:transitionName="6"
                     android:layout_marginRight="2dp"/>
             <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/image_seventh"
@@ -114,6 +120,7 @@
                     fresco:actualImageScaleType="centerCrop"
                     fresco:fadeDuration="300"
                     android:src="@mipmap/alex_unsplash"
+                    android:transitionName="7"
                     android:layout_marginRight="2dp"/>
             <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/image_eigth"
@@ -121,6 +128,7 @@
                     fresco:actualImageScaleType="centerCrop"
                     android:layout_height="120dp"
                     fresco:fadeDuration="300"
+                    android:transitionName="8"
                     android:src="@mipmap/alex_unsplash"
                     android:layout_marginRight="2dp"/>
         </LinearLayout>

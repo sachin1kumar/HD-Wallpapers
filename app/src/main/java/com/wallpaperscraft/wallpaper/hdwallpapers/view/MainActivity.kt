@@ -2,7 +2,6 @@ package com.wallpaperscraft.wallpaper.hdwallpapers.view
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProviders
-import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -10,10 +9,6 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import com.wallpaperscraft.wallpaper.hdwallpapers.R
 import com.wallpaperscraft.wallpaper.images.viewmodel.ImageViewModel
-import android.view.WindowManager
-import android.os.Build
-import android.view.View
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         (viewModel as ImageViewModel).getDashboardData().observe(
             this, android.arch.lifecycle.Observer {
                 listOfDashData = it!!
-                var catAdapter = ListOfCatAdapter(listOfDashData!!)
+                var catAdapter = ListOfCatAdapter(listOfDashData!!,this)
                 var mLayoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this) as RecyclerView.LayoutManager
                 catRecyclerView.layoutManager = mLayoutManager
                 catRecyclerView.itemAnimator
