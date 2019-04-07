@@ -89,6 +89,7 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
         }
     }
 
+
     private fun setOnClick(image: SimpleDraweeView,id:String,uri:String) {
          image.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
