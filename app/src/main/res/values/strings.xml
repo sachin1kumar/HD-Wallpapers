@@ -79,6 +79,140 @@
         <item>asset:///eigth.png</item>
     </string-array>
 
+
+    <string-array name="seeall_trending_list">
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+    </string-array>
+
+    <string-array name="seeall_abstract_list">
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+    </string-array>
+
+    <string-array name="seeall_nature_list">
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+    </string-array>
+
+    <string-array name="seeall_music_list">
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+    </string-array>
+
+    <string-array name="seeall_vehicle_list">
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+    </string-array>
+
+    <string-array name="seeall_animal_list">
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+    </string-array>
+
+    <string-array name="seeall_technology_list">
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+        <item>asset:///first.png</item>
+        <item>asset:///second.png</item>
+        <item>asset:///third.png</item>
+        <item>asset:///fourth.png</item>
+        <item>asset:///fifth.png</item>
+        <item>asset:///sixth.png</item>
+        <item>asset:///seventh.png</item>
+        <item>asset:///eigth.png</item>
+    </string-array>
+
     <string-array name="list_of_categories">
         <item>Trending</item>
         <item>Abstract</item>

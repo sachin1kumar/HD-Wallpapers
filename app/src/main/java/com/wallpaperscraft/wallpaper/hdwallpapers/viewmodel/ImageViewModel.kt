@@ -16,10 +16,25 @@ class ImageViewModel(application: Application) : AndroidViewModel(application) {
         return listOfDashdata as MutableLiveData< HashMap<String,List<String> >>
     }
 
+    private fun getMutableSeeAllRef(): MutableLiveData<List<String>>{
+        if (listOfDashdata==null){
+            listOfDashdata= MutableLiveData()
+        }
+        return listOfDashdata as MutableLiveData<List<String>>
+    }
+
     fun getDashboardData() : MutableLiveData< HashMap<String,List<String>> >{
         var listOfUri = getMutableDashRef()
         listOfUri.value=ImagesURI.getDashboardData()
         return listOfUri
     }
+
+    fun getSeeAllList(cat: String) : MutableLiveData<List<String>>?{
+        var listOfData = getMutableSeeAllRef()
+        listOfData.value = ImagesURI.getSeellAllData(cat)
+        return listOfData
+    }
+
+
 
 }

@@ -71,6 +71,22 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
 
 
         viewHolder.category.text = category
+        viewHolder.seeall.setTag(category)
+
+        setOnClickSeeall(viewHolder.seeall)
+    }
+
+    private fun setOnClickSeeall(seeall: TextView) {
+        seeall.setOnClickListener {
+            //TODO
+            var seeallfrag = SeeAllFragment()
+            seeallfrag.setData(seeall)
+            context.supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.constraintLayout, seeallfrag)
+                .addToBackStack(null)
+                .commit()
+        }
     }
 
     private fun setOnClick(image: SimpleDraweeView,id:String,uri:String) {
@@ -95,7 +111,8 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
                     .addToBackStack(null)
                     .commit()
             }
-            Toast.makeText(MyApplication.instance.applicationContext,"Click",Toast.LENGTH_SHORT).show()
+
+            Toast.makeText(MyApplication.instance.applicationContext,"Please wait..",Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -110,6 +127,7 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
         var image7: SimpleDraweeView = itemView.findViewById(R.id.image_seventh)
         var image8: SimpleDraweeView = itemView.findViewById(R.id.image_eigth)
         var category: TextView = itemView.findViewById(R.id.myImageViewText)
+        var seeall: TextView = itemView.findViewById(R.id.seeall)
     }
 
 

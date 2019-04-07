@@ -36,6 +36,36 @@ class ImagesURI {
             R.array.animal_list
         ).toList()
 
+
+
+        private val listOftallrending = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_trending_list
+        ).toList()
+
+        private val listOfallAbstract = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_abstract_list
+        ).toList()
+
+        private val listOfallNature = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_nature_list
+        ).toList()
+
+        private val listOfallMusic = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_music_list
+        ).toList()
+
+        private val listOfallVehicle = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_music_list
+        ).toList()
+
+        private val listOfalltech = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_technology_list
+        ).toList()
+
+        private val listOfallAnimal = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_animal_list
+        ).toList()
+
         private val listOfCats = MyApplication.instance.applicationContext.resources.getStringArray(
             R.array.list_of_categories
         ).toList()
@@ -59,6 +89,21 @@ class ImagesURI {
             hashMap.put(MyApplication.instance.getString(R.string.text_cat_sixth), listOftech)
             hashMap.put(MyApplication.instance.getString(R.string.text_cat_seventh), listOfAnimal)
             return hashMap
+        }
+
+        fun getSeellAllData(cat: String) : List<String>?{
+            var list: List<String> ?= null
+            when (cat) {
+                MyApplication.instance.getString(R.string.text_cat_first) -> list = listOftallrending
+                MyApplication.instance.getString(R.string.text_cat_second) -> list = listOfallAbstract
+                MyApplication.instance.getString(R.string.text_cat_third) -> list = listOfallNature
+                MyApplication.instance.getString(R.string.text_cat_fourth) -> list = listOfallMusic
+                MyApplication.instance.getString(R.string.text_cat_fifth) -> list = listOfallVehicle
+                MyApplication.instance.getString(R.string.text_cat_sixth) -> list = listOfalltech
+                MyApplication.instance.getString(R.string.text_cat_seventh) -> list = listOfallAnimal
+            }
+
+            return list
         }
 
 

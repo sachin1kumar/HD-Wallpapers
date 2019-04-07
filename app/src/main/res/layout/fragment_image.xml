@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent" xmlns:fresco="http://schemas.android.com/apk/res-auto"
-             tools:context=".view.ImageFragment">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
     <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/image"
             android:layout_width="match_parent"
             fresco:actualImageScaleType="centerCrop"
             android:layout_height="match_parent"
-            />
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"/>
+    <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dip"
+            android:background="#AA000000"
+            android:padding="12dip"
+            android:text="X"
+            android:textColor="#ffffffff"
+            android:visibility="gone"
+            fresco:fontFamily="@font/ubuntu_light"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"/>
 
-</FrameLayout>
+    <TextView
+            android:id="@+id/set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:padding="12dip"
+            android:text="SET AS WALLPAPER"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:visibility="gone"
+            fresco:fontFamily="@font/ubuntu_light"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"/>
+
+</RelativeLayout>
