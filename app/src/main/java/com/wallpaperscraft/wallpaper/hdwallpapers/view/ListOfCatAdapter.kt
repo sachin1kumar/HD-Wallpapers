@@ -79,7 +79,7 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
     private fun setOnClickSeeall(seeall: TextView) {
         seeall.setOnClickListener {
             //TODO
-            var seeallfrag = SeeAllFragment()
+            var seeallfrag = SeeAllFragment(context)
             seeallfrag.setData(seeall)
             context.supportFragmentManager
                 .beginTransaction()

@@ -3,58 +3,77 @@
     <string name="app_name">HD Wallpapers</string>
 
     <string-array name="trending_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///trending_1.webp</item>
+        <item>asset:///trending_2.webp</item>
+        <item>asset:///trending_3.webp</item>
+        <item>asset:///trending_4.webp</item>
+        <item>asset:///trending_5.webp</item>
+        <item>asset:///trending_6.webp</item>
+        <item>asset:///trending_7.webp</item>
+        <item>asset:///trending_8.webp</item>
+        <item>asset:///trending_10.webp</item>
+        <item>asset:///trending_11.webp</item>
+        <item>asset:///trending_12.webp</item>
+        <item>asset:///trending_13.webp</item>
+        <item>asset:///trending_14.webp</item>
+        <item>asset:///trending_15.webp</item>
+        <item>asset:///trending_16.webp</item>
+        <item>asset:///trending_17.webp</item>
+        <item>asset:///trending_18.webp</item>
+        <item>asset:///trending_19.webp</item>
     </string-array>
 
     <string-array name="abstract_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///abstract_1.webp</item>
+        <item>asset:///abstract_2.webp</item>
+        <item>asset:///abstract_3.webp</item>
+        <item>asset:///abstract_4.webp</item>
+        <item>asset:///abstract_5.webp</item>
+        <item>asset:///abstract_6.webp</item>
+        <item>asset:///abstract_7.webp</item>
+        <item>asset:///abstract_8.webp</item>
+        <item>asset:///abstract_10.webp</item>
+        <item>asset:///abstract_11.webp</item>
+        <item>asset:///abstract_12.webp</item>
+        <item>asset:///abstract_13.webp</item>
     </string-array>
 
     <string-array name="nature_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///nature_1.webp</item>
+        <item>asset:///nature_2.webp</item>
+        <item>asset:///nature_3.webp</item>
+        <item>asset:///nature_4.webp</item>
+        <item>asset:///nature_5.webp</item>
+        <item>asset:///nature_6.webp</item>
+        <item>asset:///nature_7.webp</item>
+        <item>asset:///nature_8.webp</item>
+        <item>asset:///nature_9.webp</item>
+        <item>asset:///nature_10.webp</item>
+        <item>asset:///nature_11.webp</item>
+        <item>asset:///nature_12.webp</item>
+        <item>asset:///nature_13.webp</item>
     </string-array>
 
     <string-array name="music_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///music_1.webp</item>
+        <item>asset:///music_2.webp</item>
+        <item>asset:///music_3.webp</item>
+        <item>asset:///music_4.webp</item>
+        <item>asset:///music_5.webp</item>
+        <item>asset:///music_6.webp</item>
+        <item>asset:///music_7.webp</item>
+        <item>asset:///music_8.webp</item>
     </string-array>
 
     <string-array name="vehicle_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///vehicle_1.webp</item>
+        <item>asset:///vehicle_2.webp</item>
+        <item>asset:///vehicle_3.webp</item>
+        <item>asset:///vehicle_4.webp</item>
+        <item>asset:///vehicle_5.webp</item>
+        <item>asset:///vehicle_6.webp</item>
+        <item>asset:///vehicle_7.webp</item>
+        <item>asset:///vehicle_8.webp</item>
     </string-array>
 
     <string-array name="animal_list">
@@ -69,53 +88,65 @@
     </string-array>
 
     <string-array name="technology_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///tech_1.webp</item>
+        <item>asset:///tech_2.webp</item>
+        <item>asset:///tech_3.webp</item>
+        <item>asset:///tech_4.webp</item>
+        <item>asset:///tech_5.webp</item>
+        <item>asset:///tech_6.webp</item>
+        <item>asset:///tech_7.webp</item>
+        <item>asset:///tech_8.webp</item>
+        <item>asset:///tech_9.webp</item>
+        <item>asset:///tech_10.webp</item>
+        <item>asset:///tech_11.webp</item>
+        <item>asset:///tech_12.webp</item>
     </string-array>
 
+    <string-array name="motivation_list">
+        <item>asset:///motivation_1.webp</item>
+        <item>asset:///motivation_2.webp</item>
+        <item>asset:///motivation_3.webp</item>
+        <item>asset:///motivation_4.webp</item>
+        <item>asset:///motivation_5.webp</item>
+        <item>asset:///motivation_6.webp</item>
+        <item>asset:///motivation_7.webp</item>
+        <item>asset:///motivation_8.webp</item>
+    </string-array>
 
     <string-array name="seeall_trending_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///trending_1.webp</item>
+        <item>asset:///trending_2.webp</item>
+        <item>asset:///trending_3.webp</item>
+        <item>asset:///trending_4.webp</item>
+        <item>asset:///trending_5.webp</item>
+        <item>asset:///trending_6.webp</item>
+        <item>asset:///trending_7.webp</item>
+        <item>asset:///trending_8.webp</item>
+        <item>asset:///trending_10.webp</item>
+        <item>asset:///trending_11.webp</item>
+        <item>asset:///trending_12.webp</item>
+        <item>asset:///trending_13.webp</item>
+        <item>asset:///trending_14.webp</item>
+        <item>asset:///trending_15.webp</item>
+        <item>asset:///trending_16.webp</item>
+        <item>asset:///trending_17.webp</item>
+        <item>asset:///trending_18.webp</item>
+        <item>asset:///trending_19.webp</item>
     </string-array>
 
     <string-array name="seeall_abstract_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///abstract_1.webp</item>
+        <item>asset:///abstract_2.webp</item>
+        <item>asset:///abstract_3.webp</item>
+        <item>asset:///abstract_4.webp</item>
+        <item>asset:///abstract_5.webp</item>
+        <item>asset:///abstract_6.webp</item>
+        <item>asset:///abstract_7.webp</item>
+        <item>asset:///abstract_8.webp</item>
+        <item>asset:///abstract_10.webp</item>
+        <item>asset:///abstract_11.webp</item>
+        <item>asset:///abstract_12.webp</item>
+        <item>asset:///abstract_13.webp</item>
     </string-array>
 
     <string-array name="seeall_nature_list">
@@ -138,41 +169,33 @@
     </string-array>
 
     <string-array name="seeall_music_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///music_1.webp</item>
+        <item>asset:///music_2.webp</item>
+        <item>asset:///music_3.webp</item>
+        <item>asset:///music_4.webp</item>
+        <item>asset:///music_5.webp</item>
+        <item>asset:///music_6.webp</item>
+        <item>asset:///music_7.webp</item>
+        <item>asset:///music_8.webp</item>
+        <item>asset:///music_9.webp</item>
+        <item>asset:///music_10.webp</item>
+        <item>asset:///music_11.webp</item>
+        <item>asset:///music_12.webp</item>
     </string-array>
 
     <string-array name="seeall_vehicle_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///vehicle_1.webp</item>
+        <item>asset:///vehicle_2.webp</item>
+        <item>asset:///vehicle_3.webp</item>
+        <item>asset:///vehicle_4.webp</item>
+        <item>asset:///vehicle_5.webp</item>
+        <item>asset:///vehicle_6.webp</item>
+        <item>asset:///vehicle_7.webp</item>
+        <item>asset:///vehicle_8.webp</item>
+        <item>asset:///vehicle_9.webp</item>
+        <item>asset:///vehicle_10.webp</item>
+        <item>asset:///vehicle_11.webp</item>
+        <item>asset:///vehicle_12.webp</item>
     </string-array>
 
     <string-array name="seeall_animal_list">
@@ -195,28 +218,40 @@
     </string-array>
 
     <string-array name="seeall_technology_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
+        <item>asset:///tech_1.webp</item>
+        <item>asset:///tech_2.webp</item>
+        <item>asset:///tech_3.webp</item>
+        <item>asset:///tech_4.webp</item>
+        <item>asset:///tech_5.webp</item>
+        <item>asset:///tech_6.webp</item>
+        <item>asset:///tech_7.webp</item>
+        <item>asset:///tech_8.webp</item>
+        <item>asset:///tech_9.webp</item>
+        <item>asset:///tech_10.webp</item>
+        <item>asset:///tech_11.webp</item>
+        <item>asset:///tech_12.webp</item>
     </string-array>
+
+    <string-array name="seeall_motivation_list">
+        <item>asset:///motivation_1.webp</item>
+        <item>asset:///motivation_2.webp</item>
+        <item>asset:///motivation_3.webp</item>
+        <item>asset:///motivation_4.webp</item>
+        <item>asset:///motivation_5.webp</item>
+        <item>asset:///motivation_6.webp</item>
+        <item>asset:///motivation_7.webp</item>
+        <item>asset:///motivation_8.webp</item>
+        <item>asset:///motivation_9.webp</item>
+        <item>asset:///motivation_10.webp</item>
+        <item>asset:///motivation_11.webp</item>
+        <item>asset:///motivation_12.webp</item>
+    </string-array>
+
 
     <string-array name="list_of_categories">
         <item>Trending</item>
-        <item>Abstract</item>
         <item>Nature</item>
+        <item>Abstract</item>
         <item>Music</item>
         <item>Vehicles</item>
         <item>Animals</item>
@@ -229,7 +264,7 @@
     <string name="text_cat_second">Nature</string>
     <string name="text_cat_third">Abstract</string>
     <string name="text_cat_fourth">Music</string>
-    <string name="text_cat_fifth">Vehicle</string>
+    <string name="text_cat_fifth">Cars</string>
     <string name="text_cat_sixth">Technology</string>
     <string name="text_cat_seventh">Motivation</string>
 

@@ -36,7 +36,9 @@ class ImagesURI {
             R.array.animal_list
         ).toList()
 
-
+        private val listOfMotivation = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.motivation_list
+        ).toList()
 
         private val listOftallrending = MyApplication.instance.applicationContext.resources.getStringArray(
             R.array.seeall_trending_list
@@ -55,7 +57,7 @@ class ImagesURI {
         ).toList()
 
         private val listOfallVehicle = MyApplication.instance.applicationContext.resources.getStringArray(
-            R.array.seeall_music_list
+            R.array.seeall_vehicle_list
         ).toList()
 
         private val listOfalltech = MyApplication.instance.applicationContext.resources.getStringArray(
@@ -64,6 +66,10 @@ class ImagesURI {
 
         private val listOfallAnimal = MyApplication.instance.applicationContext.resources.getStringArray(
             R.array.seeall_animal_list
+        ).toList()
+
+        private val listOfallMotivation = MyApplication.instance.applicationContext.resources.getStringArray(
+            R.array.seeall_motivation_list
         ).toList()
 
         private val listOfCats = MyApplication.instance.applicationContext.resources.getStringArray(
@@ -82,12 +88,12 @@ class ImagesURI {
         fun createHashMap(): HashMap<String, List<String>> {
             hashMap = HashMap()
             hashMap.put(MyApplication.instance.getString(R.string.text_cat_first), listOftrending)
-            hashMap.put(MyApplication.instance.getString(R.string.text_cat_second), listOfAbstract)
-            hashMap.put(MyApplication.instance.getString(R.string.text_cat_third), listOfNature)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_second), listOfNature)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_third), listOfAbstract)
             hashMap.put(MyApplication.instance.getString(R.string.text_cat_fourth), listOfMusic)
             hashMap.put(MyApplication.instance.getString(R.string.text_cat_fifth), listOfVehicle)
             hashMap.put(MyApplication.instance.getString(R.string.text_cat_sixth), listOftech)
-            hashMap.put(MyApplication.instance.getString(R.string.text_cat_seventh), listOfAnimal)
+            hashMap.put(MyApplication.instance.getString(R.string.text_cat_seventh), listOfMotivation)
             return hashMap
         }
 
@@ -95,12 +101,12 @@ class ImagesURI {
             var list: List<String> ?= null
             when (cat) {
                 MyApplication.instance.getString(R.string.text_cat_first) -> list = listOftallrending
-                MyApplication.instance.getString(R.string.text_cat_second) -> list = listOfallAbstract
-                MyApplication.instance.getString(R.string.text_cat_third) -> list = listOfallNature
+                MyApplication.instance.getString(R.string.text_cat_second) -> list = listOfNature
+                MyApplication.instance.getString(R.string.text_cat_third) -> list = listOfAbstract
                 MyApplication.instance.getString(R.string.text_cat_fourth) -> list = listOfallMusic
                 MyApplication.instance.getString(R.string.text_cat_fifth) -> list = listOfallVehicle
                 MyApplication.instance.getString(R.string.text_cat_sixth) -> list = listOfalltech
-                MyApplication.instance.getString(R.string.text_cat_seventh) -> list = listOfallAnimal
+                MyApplication.instance.getString(R.string.text_cat_seventh) -> list = listOfallMotivation
             }
 
             return list

@@ -82,7 +82,7 @@ class ImageFragment : Fragment() {
                 WallpaperManager.getInstance(context)
                     .setStream(context!!.assets.open(filename+"_full.jpg"))
                 Toast.makeText(MyApplication.instance.applicationContext,"Wallpaper changed!", Toast.LENGTH_SHORT).show()
-
+                activity!!.supportFragmentManager.popBackStack()
             }catch (e:Exception){
                 e.printStackTrace()
             }
@@ -91,18 +91,22 @@ class ImageFragment : Fragment() {
     }
 
     private fun showOptions() {
-        val timerObj = Timer()
-        val timerTaskObj = object : TimerTask() {
-            override fun run() {
-                close.handler.post{
-                    close.visibility = View.VISIBLE
-                }
-                setwallpaper.handler.post{
-                    setwallpaper.visibility = View.VISIBLE
+        try {
+            val timerObj = Timer()
+            val timerTaskObj = object : TimerTask() {
+                override fun run() {
+                    close.handler?.post {
+                        close.visibility = View.VISIBLE
+                    }
+                    setwallpaper.handler?.post {
+                        setwallpaper.visibility = View.VISIBLE
+                    }
                 }
             }
+            timerObj.schedule(timerTaskObj, 5000)
+        }catch (e:Exception){
+
         }
-        timerObj.schedule(timerTaskObj, 5000)
     }
 
 

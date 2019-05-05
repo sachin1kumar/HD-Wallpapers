@@ -2,19 +2,19 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/constraintLayout"
+        android:id="@+id/see_all_constraintLayout"
         android:layout_width="match_parent"
         android:background="#ffffff"
         android:layout_height="wrap_content" tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
     <include
-            android:id="@+id/see_tool_bar"
+            android:id="@+id/see_all_tool_bar"
             layout="@layout/app_bar"/>
 
     <android.support.v7.widget.RecyclerView
             android:id="@+id/see_all_list"
-            android:layout_below="@+id/see_tool_bar"
+            android:layout_below="@+id/see_all_tool_bar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"

@@ -16,8 +16,8 @@
             fresco:fadeDuration="300"
             android:src="@mipmap/alex_unsplash"
             android:transitionName="1"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"/>
 
