@@ -14,10 +14,19 @@
 
     <android.support.v7.widget.RecyclerView
             android:id="@+id/see_all_list"
-            android:layout_below="@+id/see_all_tool_bar"
+            android:layout_below="@+id/startAppBanner2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.startapp.android.publish.ads.banner.Banner
+            android:id="@+id/startAppBanner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/see_all_tool_bar"
+    />
 
 </RelativeLayout>

@@ -16,7 +16,7 @@ import android.widget.TextView
 import com.wallpaperscraft.wallpaper.hdwallpapers.R
 import com.wallpaperscraft.wallpaper.images.viewmodel.ImageViewModel
 import android.support.v7.app.AppCompatActivity
-
+import com.startapp.android.publish.ads.banner.Banner
 
 
 class SeeAllFragment(context:Context) : Fragment(){
@@ -29,6 +29,8 @@ class SeeAllFragment(context:Context) : Fragment(){
     private lateinit var seeAll: String
     private lateinit var listOfData: List<String>
     private lateinit var title: TextView
+    private var banner: Banner? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +44,8 @@ class SeeAllFragment(context:Context) : Fragment(){
         seeallRecyclerView = view.findViewById(R.id.see_all_list)
         title = view.findViewById(R.id.toolbar_title)
         title.text = seeAll
+        banner = view.findViewById(R.id.startAppBanner2)
+        banner!!.showBanner()
 
         (viewModel as ImageViewModel).getSeeAllList(seeAll)!!.observe(
             this, android.arch.lifecycle.Observer {
