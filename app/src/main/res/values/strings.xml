@@ -76,16 +76,6 @@
         <item>asset:///vehicle_8.webp</item>
     </string-array>
 
-    <string-array name="animal_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-    </string-array>
 
     <string-array name="technology_list">
         <item>asset:///tech_1.webp</item>
@@ -149,24 +139,6 @@
         <item>asset:///abstract_13.webp</item>
     </string-array>
 
-    <string-array name="seeall_nature_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-    </string-array>
 
     <string-array name="seeall_music_list">
         <item>asset:///music_1.webp</item>
@@ -196,25 +168,6 @@
         <item>asset:///vehicle_10.webp</item>
         <item>asset:///vehicle_11.webp</item>
         <item>asset:///vehicle_12.webp</item>
-    </string-array>
-
-    <string-array name="seeall_animal_list">
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
-        <item>asset:///first.png</item>
-        <item>asset:///second.png</item>
-        <item>asset:///third.png</item>
-        <item>asset:///fourth.png</item>
-        <item>asset:///fifth.png</item>
-        <item>asset:///sixth.png</item>
-        <item>asset:///seventh.png</item>
-        <item>asset:///eigth.png</item>
     </string-array>
 
     <string-array name="seeall_technology_list">

@@ -1,5 +1,7 @@
 package com.wallpaperscraft.wallpaper.hdwallpapers.view
 
+import android.app.Application
+import android.app.ProgressDialog
 import android.app.WallpaperManager
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -12,6 +14,8 @@ import android.widget.Toast
 import com.facebook.drawee.view.SimpleDraweeView
 import com.wallpaperscraft.wallpaper.hdwallpapers.MyApplication
 import com.wallpaperscraft.wallpaper.hdwallpapers.R
+import com.wallpaperscraft.wallpaper.images.model.ImagesURI
+import kotlinx.coroutines.*
 import java.lang.Exception
 import java.util.*
 
@@ -26,6 +30,9 @@ class ImageFragment : Fragment() {
     private var filename: String? = null
     private lateinit var close: TextView
     private lateinit var setwallpaper: TextView
+    private lateinit var progressDialog: ProgressDialog
+    private val viewModelJob = Job()
+    private val uiScope = CoroutineScope(viewModelJob+Dispatchers.Main)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,17 +66,34 @@ class ImageFragment : Fragment() {
         image = view!!.findViewById(R.id.image)
         close = view!!.findViewById(R.id.close)
         setwallpaper = view!!.findViewById(R.id.set)
-        showOptions()
-        setClickListeners()
-        // Inflate the layout for this fragment
-        image!!.setImageURI("asset:///"+filename+"_full.jpg")
 
+        progressDialog = ProgressDialog(context, ProgressDialog.THEME_HOLO_LIGHT);
+        uiScope.launch {
+            progressDialog.show()
+            progressDialog.setCancelable(false)
+            progressDialog.setMessage("Loading wallpaper..")
+            getImagefromserver()
+            showOptions()
+            progressDialog.dismiss()
+            uiScope.cancel()
+        }
+
+        setClickListeners()
+
+        // Inflate the layout for this fragment
         view.setOnTouchListener { v, event ->
             // ignore all touch events
             true
         }
 
         return view
+    }
+
+    private suspend fun getImagefromserver() {
+        withContext(Dispatchers.Main){
+            image!!.setImageURI(filename?.let { ImagesURI.getdisplayUrl(it) })
+            delay(3000)
+        }
     }
 
     private fun setClickListeners() {

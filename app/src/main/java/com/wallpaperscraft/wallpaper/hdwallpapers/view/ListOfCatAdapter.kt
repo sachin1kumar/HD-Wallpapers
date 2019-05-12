@@ -92,28 +92,32 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
 
     private fun setOnClick(image: SimpleDraweeView,id:String,uri:String) {
          image.setOnClickListener {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                var imageFragment = ImageFragment()
-                imageFragment.sharedElementEnterTransition = DetailsTransition()
-                imageFragment.enterTransition = Fade()
-                imageFragment.exitTransition = Fade()
-                imageFragment.sharedElementReturnTransition = DetailsTransition()
+
+             if (MyApplication().isNetworkConnected()) {
+                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                     var imageFragment = ImageFragment()
+                     imageFragment.sharedElementEnterTransition = DetailsTransition()
+                     imageFragment.enterTransition = Fade()
+                     imageFragment.exitTransition = Fade()
+                     imageFragment.sharedElementReturnTransition = DetailsTransition()
 
 
-                var bundle= Bundle()
-                bundle.putString("uri",uri)
+                     var bundle = Bundle()
+                     bundle.putString("uri", uri)
 
-                imageFragment.arguments=bundle
+                     imageFragment.arguments = bundle
 
-                context.supportFragmentManager
-                    .beginTransaction()
-                    .addSharedElement(image,id)
-                    .replace(R.id.constraintLayout, imageFragment)
-                    .addToBackStack(null)
-                    .commit()
-            }
-
-            Toast.makeText(MyApplication.instance.applicationContext,"Please wait..",Toast.LENGTH_SHORT).show()
+                     context.supportFragmentManager
+                         .beginTransaction()
+                         .addSharedElement(image, id)
+                         .replace(R.id.constraintLayout, imageFragment)
+                         .addToBackStack(null)
+                         .commit()
+                 }
+             }
+             else {
+                 Toast.makeText(MyApplication.instance.applicationContext,"No internet connection",Toast.LENGTH_SHORT).show()
+             }
         }
     }
 
