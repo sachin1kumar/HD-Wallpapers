@@ -18,14 +18,18 @@ import com.wallpaperscraft.wallpaper.hdwallpapers.R
 import java.text.FieldPosition
 
 
-class SeeAllAdapter(listOfdata: List<String>, context: Context) : RecyclerView.Adapter<SeeAllAdapter.ViewHolder>() {
+class SeeAllAdapter(listOfdata: List<String>, mcontext: Context) : RecyclerView.Adapter<SeeAllAdapter.ViewHolder>() {
 
     private var listOfimages = listOfdata
-    private var context = context
+    var context: Context = mcontext
+    companion object{
+        lateinit var fcontext: Context
+    }
     private var idcounter: Int = 0
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): SeeAllAdapter.ViewHolder {
         val inflater = LayoutInflater.from(viewGroup.context)
+        fcontext = context
         return SeeAllAdapter.ViewHolder(inflater.inflate(R.layout.see_all_rows, viewGroup, false))
     }
 
@@ -55,9 +59,10 @@ class SeeAllAdapter(listOfdata: List<String>, context: Context) : RecyclerView.A
                     imageFragment.exitTransition = Fade()
                     imageFragment.sharedElementReturnTransition = DetailsTransition()
 
-
                     var bundle = Bundle()
                     bundle.putString("uri", uri)
+                    bundle.putString("source","seeall")
+
 
                     imageFragment.arguments = bundle
 

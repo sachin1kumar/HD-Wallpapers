@@ -1,5 +1,6 @@
 package com.wallpaperscraft.wallpaper.hdwallpapers.view
 
+import android.content.Context
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -27,8 +28,13 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
     private lateinit var category: String
     private var context=context
 
+    companion object{
+        lateinit var fcontext: Context
+    }
+
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): ViewHolder {
         val inflater = LayoutInflater.from(viewGroup.context)
+        fcontext = context
         return ViewHolder(inflater.inflate(R.layout.category_rows, viewGroup, false))
     }
 
@@ -104,6 +110,7 @@ class ListOfCatAdapter(listOfDashData:HashMap<String,List<String> >,context:Frag
 
                      var bundle = Bundle()
                      bundle.putString("uri", uri)
+                     bundle.putString("source","Cat")
 
                      imageFragment.arguments = bundle
 
