@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1078010529271",
+    "firebase_url": "https://hdwallpapers-267c9.firebaseio.com",
+    "project_id": "hdwallpapers-267c9",
+    "storage_bucket": "hdwallpapers-267c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078010529271:android:ab0f10b9f84a915d",
+        "android_client_info": {
+          "package_name": "com.wallpaperscraft.wallpaper.hdwallpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078010529271-gs3j3jkuoiqoueqevguibse5oesekjo8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wallpaperscraft.wallpaper.hdwallpapers",
+            "certificate_hash": "4014041902e64b0f0bb0a5089a7bc649f0ef7869"
+          }
+        },
+        {
+          "client_id": "1078010529271-2a4bai4mgb6jo1ce3pcp8j0kohvumruc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG5hJXenzxxcRvB3Ez57GKUhrl9ySdTvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078010529271-2a4bai4mgb6jo1ce3pcp8j0kohvumruc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

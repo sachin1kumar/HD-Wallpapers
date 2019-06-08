@@ -106,7 +106,7 @@ class ImageFragment : Fragment() {
     private suspend fun getImagefromserver() {
         withContext(Dispatchers.Main){
             image!!.setImageURI(filename?.let { ImagesURI.getdisplayUrl(it) })
-            delay(3000)
+            delay(10000)
         }
     }
 

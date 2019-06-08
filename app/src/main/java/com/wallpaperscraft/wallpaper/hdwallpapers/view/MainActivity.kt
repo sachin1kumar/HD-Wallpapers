@@ -67,8 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initStartAppSdk() {
         //Initialize start-app sdk
-        //TODO
-        StartAppSDK.init(this, "", false)
+        StartAppSDK.init(this, "204114300", false)
     }
 
     private fun showGdprDialog() {
