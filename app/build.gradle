@@ -14,13 +14,19 @@ android {
         applicationId "com.wallpaperscraft.wallpaper.hdwallpapers"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 2
-        versionName "1.0"
+        versionCode 6
+        versionName "1.1"
     }
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
+            useProguard false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    bundle {
+        abi {
+            enableSplit false
         }
     }
 }
@@ -41,11 +47,15 @@ dependencies {
     kapt "android.arch.lifecycle:compiler:$archLifecycleVersion"
 
     //fressco library.
-    implementation 'com.facebook.fresco:fresco:1.11.0'
+    implementation('com.facebook.fresco:fresco:1.11.0'){
+        exclude group: 'com.facebook.soloader', module: 'soloader'
+
+    }
     implementation 'com.startapp:inapp-sdk:3.10.0'
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1")
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.1'
 
+    implementation 'com.facebook.soloader:soloader:0.6.0+'
 
 }
